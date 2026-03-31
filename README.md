@@ -67,7 +67,7 @@ For example, to retrieve only an endpoint's OS and last contact time, the query 
 }
 ```
 
-Only the requested fields are returned, minimising payload size and unnecessary data transfer.
+Only the requested fields are returned, minimizing payload size and unnecessary data transfer.
 
 ### `nodes` vs. `edges` in Paged Results
 
