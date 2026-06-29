@@ -1,6 +1,6 @@
-# Getting Started with the Proactive Connect API
+# Getting Started with the baramundi Proactive Connect API
 
-This guide covers the essential concepts, tooling, authentication, and query workflow required to integrate with the **Proactive Connect API**.
+This guide covers the essential concepts, tooling, authentication, and query workflow required to integrate with the **baramundi Proactive Connect API**.
 
 ---
 
@@ -82,7 +82,7 @@ Unless you need per-item cursors, use `nodes`.
 
 ## 2. Tools
 
-You can interact with the Proactive Connect API using any HTTP client, but dedicated GraphQL tools offer features like **schema exploration**, **auto-completion**, and **query validation** that make development significantly easier.
+You can interact with the baramundi Proactive Connect API using any HTTP client, but dedicated GraphQL tools offer features like **schema exploration**, **auto-completion**, and **query validation** that make development significantly easier.
 
 ### Recommended Tools
 
@@ -96,7 +96,7 @@ You can interact with the Proactive Connect API using any HTTP client, but dedic
 
 The **schema** is a machine-readable description of everything the API offers — all available queries, types, and fields. Loading it into your tool enables auto-completion and inline documentation while you write queries, and lets you explore what data is available without guessing.
 
-Most GraphQL tools can load the API schema to enable auto-completion and validation. The Proactive Connect API exposes its schema definition at the `?sdl` path.
+Most GraphQL tools can load the API schema to enable auto-completion and validation. The baramundi Proactive Connect API exposes its schema definition at the `?sdl` path.
 
 To retrieve the schema, send a **GET** request with your Bearer token, as in this example:
 
@@ -131,15 +131,15 @@ The GraphQL API endpoint depends on the deployment region. Use the endpoint that
 
 ## 4. Authentication
 
-The Proactive Connect API uses [OAuth 2.0](https://www.microsoft.com/en-us/security/business/security-101/what-is-oauth) for authentication.
+The baramundi Proactive Connect API uses [OAuth 2.0](https://www.microsoft.com/en-us/security/business/security-101/what-is-oauth) for authentication.
 
 ### Service-to-Service Communication
 
-Currently, authentication for the Proactive Connect API is designed for **service-to-service (machine-to-machine) communication**. It uses the **OAuth 2.0 Client Credentials Grant** — there is no interactive user login involved. Your application authenticates directly with its own credentials.
+Currently, authentication for the baramundi Proactive Connect API is designed for **service-to-service (machine-to-machine) communication**. It uses the **OAuth 2.0 Client Credentials Grant** — there is no interactive user login involved. Your application authenticates directly with its own credentials.
 
 ### Configuring API Access
 
-To use the API, you need a set of **client credentials** (Client ID and Client Secret). These are provisioned and managed through the Proactive Connect management portal. Contact your administrator to obtain or configure API access for your service account.
+To use the API, you need a set of **client credentials** (Client ID and Client Secret). These are provisioned and managed through the baramundi Proactive Connect management portal. Contact your administrator to obtain or configure API access for your service account.
 
 For detailed instructions on how to configure API access, refer to the [baramundi documentation](https://docs.baramundi.com/helpsetid=m_t_administration&externalid=a_proactive-hub_administration_api-proactive-connect).
 
@@ -267,7 +267,7 @@ This way your Client ID and Client Secret are never stored in plain text within 
 
 ## 5. Queries — User Flow
 
-The Proactive Connect API organizes its queries under the following **top-level roots**:
+The baramundi Proactive Connect API organizes its queries under the following **top-level roots**:
 
 | Root | Description |
 |------|-------------|
